@@ -38,7 +38,7 @@ There is alot of ways of getting your pi ip, ill provide 2 ways i personally use
 
 
 
-## Installing Putty(For SSH) / Could also use windows cmd instead
+## Installing Putty(For SSH) / Could also use windows cmd instead / Or whatever SSH programes you want
 1) Go to https://www.putty.org/ to download and install putty on ur pc then run it
 2) Fill in `Host name (or ip address)` with ur noted pi ip inorder to connect to it
 3) You could also save this by pressing on `default settings` then `save` so u dont need to enter it everytime
