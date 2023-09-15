@@ -79,6 +79,7 @@ static domain_name_servers=xxx.xxx.xxx.xxx
 9) you can look through dhcpcd.conf to see what these text mean and change it to suit what you have.
 10) now do `ctrl+x`, `y` , `enter` to save everything.
 11) now you would need to restart your pi `sudo reboot`.
+12) could also do `ifconfig` again to make sure changes has been made after reboot.
 
 
 
