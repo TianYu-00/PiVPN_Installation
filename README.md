@@ -65,6 +65,21 @@ With all those done, we now could access our pi headlessly from our windows pc. 
 1) To make you pi's ip to static you would need to login to your router site(instruction mentioned above)
 2) For me i used Static DHCP lease for my Pi (Link the pi's mac address with the current pi ip)
 3) If you have any problems with doing this try looking through online to see how to set a static ip or static DHCP for your pi on your router.
+4) ========================================================================
+5) you could also just directly set ur pi static ip
+6) `ifconfig` to check your current local ip from eth0
+7) `sudo nano /etc/dhcpcd.conf`
+8) Now scroll down to the bottom and paste the below text in
+```
+interface eth0
+static ip_address=xxx.xxx.xxx.xxx/24
+static routers=xxx.xxx.xxx.xxx
+static domain_name_servers=xxx.xxx.xxx.xxx
+```
+9) you can look through dhcpcd.conf to see what these text mean and change it to suit what you have.
+10) now do `ctrl+x`, `y` , `enter` to save everything.
+11) now you would need to restart your pi `sudo reboot`.
+
 
 
 ## Preparing PiVPN🛡️
